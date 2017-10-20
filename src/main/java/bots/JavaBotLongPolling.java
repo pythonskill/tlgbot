@@ -19,6 +19,7 @@ public class JavaBotLongPolling extends TelegramLongPollingBot {
         ApiContextInitializer.init(); // Инициализируем апи
         TelegramBotsApi botapi = new TelegramBotsApi();
         try {
+
             botapi.registerBot(new JavaBotLongPolling());
         } catch (TelegramApiException e) {
             e.printStackTrace();
